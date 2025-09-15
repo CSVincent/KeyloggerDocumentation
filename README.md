@@ -18,7 +18,16 @@ This project is a **Python-based keylogger** designed mainly for educational and
 - **Manual Execution:** Run directly on the target machine with Python installed.
 - **Executable Packaging:** Use PyInstaller to create a single `.exe` for Windows deployment without requiring Python.
 - **USB-based Delivery:** Store executable or script on removable media (manual execution recommended as autorun is disabled in modern OS).
-- **Network Delivery (Advanced):** With tools like Metasploit, deliver payloads remotely in authorized penetration testing environments.
+- **Metasploit Framework with Meterpreter:**
+Instead of using the above Python script, Metasploit uses its Meterpreter payload for keylogging and system control. Meterpreter is an advanced, in-memory payload that provides a comprehensive suite of post-exploitation tools, including built-in keylogging capabilities. This means:
+
+You do not deploy or use your custom Python keylogger script.
+
+Meterpreter operates stealthily without writing to disk, making it more evasive.
+
+Keylogging is activated via Meterpreter’s commands such as keyscan_start and keyscan_dump.
+
+It requires delivering payloads using Metasploit exploits or social engineering techniques..
 
 ---
 
